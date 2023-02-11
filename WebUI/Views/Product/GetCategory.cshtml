@@ -1,0 +1,97 @@
+﻿@model List<Entity.Product>
+
+@{
+    ViewData["Title"] = "GetCategory";
+}
+
+<section class="  pb-100">
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-3">
+
+
+
+
+
+
+                <div class="col-xl-3">
+                    <div style="width: 221px;" class="block-item" data-type="filter-product-groups">
+
+                        <div class="block-item-title">
+                            <a href="/Product/Index">Tüm Ürünler</a>
+                        </div>
+                        <div class="block-item-content">
+                            <div class="filter-menu openbox-content" data-filter-menu-delay="0">
+                                <div class="filter-menu-box filter-menu-category">
+
+                                    @await Component.InvokeAsync("CategoryComponent")
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="shop__content-area">
+
+                    <div class="tab-content">
+
+                        <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+                            <div class=" row custom-row-10">
+
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Ürün Adı</th>
+                                            <th scope="col">Fiyat</th>
+                                            <th scope="col">Detay</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <th scope="row">@item.Id</th>
+                                                <td><a href="/Product/GetDetail/@item.Id">@item.ProductName</a></td>
+                                                <td><a href="/Product/GetDetail/@item.Id">@item.Price</a></td>
+                                                <td><a href="/Product/GetDetail/@item.Id">Ürün Detayı</a></td>
+
+                                            </tr>
+                                        }
+
+
+                                    </tbody>
+                                </table>
+
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

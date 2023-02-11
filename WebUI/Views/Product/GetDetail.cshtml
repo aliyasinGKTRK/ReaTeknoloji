@@ -1,0 +1,14 @@
+﻿@model List<Entity.Product>
+@{
+    ViewData["Title"] = "GetDetail";
+}
+<div class="jumbotron">
+    @foreach (var item in Model)
+    {
+        <h1 class="display-4">@item.ProductName</h1>
+        <p class="lead">@item.Description</p>
+        <hr class="my-4">
+        <span class="btn btn-primary btn-lg" href="javscript:void(0)" role="button">@item.Price ₺</span>
+    }
+
+</div>

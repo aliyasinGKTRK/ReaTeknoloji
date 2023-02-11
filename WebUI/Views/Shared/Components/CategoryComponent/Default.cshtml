@@ -1,0 +1,11 @@
+﻿@model List<Entity.Category>
+
+
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+    <a href="/Product/GetCategory/@item.Id" class="list-group-item list-group-item-action">@item.Name</a>
+
+    }
+
+</div>
