@@ -5,7 +5,7 @@
 
 # Başlatmadan Önce
 
-* DataAccess Katmanınıda ReaContext isimli sınıftan ConnectionString yapılandırmasını yapınız
+* DataAccess katmanınıda ReaContext isimli sınıftan ConnectionString yapılandırmasını yapınız
 
-* DataAccess Katmanından projeji set us startup project diyerek seçiniz 
-* Package  Manager Console üzerinden DataAccess Katmanını Seçili olduğundan emin olarak update-database komutunu çalıştırın 
+* DataAccess Katmanından projeyi set as startup project diyerek seçiniz 
+* Package  Manager Console üzerinden DataAccess katmanını seçili olduğundan emin olarak update-database komutunu çalıştırın 
