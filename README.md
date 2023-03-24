@@ -1,4 +1,3 @@
-# ReaTeknoloji-Task
 
 * Net Core 7 ile geliştirilmiştir
 * Code-First Yaklaşımı kullanılmıştır 
